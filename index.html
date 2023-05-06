@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <div class="zone">
+        <div class id="ball">
+            
+        </div>
+    </div>
+
+    <div class="button">
+        <button class="left"onclick="moveleft()">left<i class="las la-arrow-alt-circle-left"></i></button>
+        <button class="right"onclick="moveright()">right<i class="las la-arrow-alt-circle-right"></i></button>
+        <button class="up"onclick="moverup()">up<i class="las la-arrow-circle-up"></i></button>
+        <button class="down"onclick="moverdown()">down<i class="las la-arrow-alt-circle-down"></i></button>
+        <button class="restart"onclick="moverrestart()">restart<i class="las la-undo-alt"></i></button>
+        <button class="newgame"onclick="movernewgame()">new game</button>
+        <button class="slow"onclick="moverslow()">slow</button>
+        <button class="fast"onclick="moverfast()">fast</button>
+        <button class="continue"onclick="movercontinue()">continue</button>
+    </div>
+
+
+    <div id="inputs">
+        <input type="number" placeholder="box height, wide">
+        <input type="color" value="box color"><br>
+        <input type="text" placeholder="ball height, wide">
+        <input type="color" placeholder="ball color"><br>
+        <input type="number" placeholder="step length"><br> 
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
