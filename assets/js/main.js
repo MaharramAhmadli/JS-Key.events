@@ -1,29 +1,29 @@
-var ball = document.getElementById("ball");
-var x = 160;
-var y = 150;
 
+var ball = document.querySelector("ball");
 
-window.onkeydown = function(event){
-    switch(event.keyCode){
-        case 37:
-        x = x - 2;
-        ball.style.left = x + "px";
-        break;
+window.onkeydown = function ball (){
+    var top =document.getElementById("ball");
+    var left = top.offsetLeft;
+    var up = top.offsetTop;
+    var code = event.keyCode;
 
-        case 39:
-             x = x + 2;
-             ball.style.left = x + "px";
-        break;
+    //left 
+    if(code == 37 && left > 16){
+        top.style.left = (left - 5)+ "px";
+    }
 
-        case 38:
-            y = y - 2;
-            ball.style.top = y +"px";
-        break;
+    //up
+    if(code == 38 && up > 16){
+        top.style.top = (up - 5)+ "px"
+    }
 
-        case 40:
-            y = y + 2
-            ball.style.top = y + "px";
-            break;
+    //right
+    if(code == 39 && left< 731){
+        top.style.left = (left + 5)+ "px";
+    }
+
+    //down
+    if(code == 40 && up < 331){
+        top.style.top = (up + 5)+ "px";
     }
 }
-
